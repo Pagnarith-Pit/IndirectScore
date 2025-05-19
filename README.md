@@ -3,11 +3,10 @@ This repository contains code and data for paper "IndirectScore: An Automatic Ev
 ## Project Structure
 
 ### Dataset/
-- full_question_solution_latest.json: Contains a collection of programming problems, their solutions, and dialogue examples with varying levels of directness (least, more, most) for tutor questions.
+- full_context_processed.json: Contains a collection of programming problems, their solutions, and dialogue examples with varying levels of directness (least, more, most) for tutor questions.
+- OnlyNextQ_processed.json: Ablation dataset with conversation removed, keeping only NextQ
 
 ### Result/
-- log_prob_score_codellama.json: Log probability scores calculated using the CodeLlama model.
-- `log_prob_score_qwen.json`: Log probability scores calculated using the Qwen model.
 - `log_probability_boxplot.png`: Visualization showing the distribution of log probability scores.
 - `log_probability_boxplot_no_outliers.png`: Visualization with outliers removed for clearer comparison.
 
