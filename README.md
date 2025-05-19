@@ -1,4 +1,7 @@
-This repository contains code and data for paper "IndirectScore: An Automatic Evaluation Metric for Socratic AI Tutor’s Responses"
+This repository contains code and data for paper "Towards Automated Evaluation of Socratic Tutoring: Introducing IndirectScore for Programming Education."
+
+## Outputs
+We propose IndirectScore, a preliminary automated metric that uses language-model surprisal to estimate the indirectness of Socratic tutor questions while controlling for topical relevance. To support evaluation, we build and release a small benchmark of 168 programming-education dialogues labelled at three indirectness levels (BEST, MEDIUM, WORST). On this set, IndirectScore aligns with expert judgements in about 71 % of pairwise comparisons and exceeds ROUGE-L and BERTScore, suggesting that answer-predictability offers a useful signal beyond surface overlap. Although the study is limited by dataset size and domain scope, IndirectScore provides an initial, scalable tool for analysing question quality in AI tutoring and related dialogue settings.
 
 ## Project Structure
 
@@ -35,8 +38,3 @@ The methodology includes:
 3. Comparing log probabilities across different directness levels
 4. Statistical analysis to determine significance of the results
 5. Visualization to present findings
-
-## Results
-
-The analysis shows statistical differences between the log probability scores for different levels of question directness, with p-values indicating significant effects between "least" and "most" direct questioning styles.
-However, confound factors such as Relevance must be controlled beforehand for correct interpretability. 
